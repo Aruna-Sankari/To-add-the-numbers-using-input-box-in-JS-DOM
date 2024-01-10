@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Sum</title>
+</head>
+<body>
+<label>First Number:</label>
+<input type="text" id="a1"><br><br>
+<label>Second Number:</label>
+<input type="text" id="b1"><br><br>
+<button id="add" style="margin-left:100px">Submit</button><br>
+<p id="para" style="margin-left:120px"></p>
+<script>
+    let add=document.getElementById("add");
+    add.addEventListener("click",function(){
+       var number1 = document.getElementById('a1').value;
+       var number2 = document.getElementById('b1').value;
+       var c = parseInt(number1) + parseInt(number2);
+       document.getElementById("para").innerHTML = c;
+ });
+</script>
+</body>
+</html>
